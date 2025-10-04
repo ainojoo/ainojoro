@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aino Joro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li class="menu active"><a href="index.html">Minä</a></li>
+            <li class="menu"><a href="work.html">Töissä</a></li>
+            <li class="menu"><a href="sport.html">Urheilemassa</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Kuka mää oon?</h1>
+    </header>
+
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <img src="omakuva.jpg" class="slide" alt="kuva minusta">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="majukuva.jpg" class="slide" alt="minä pelaamassa amerikkalaista jalkapalloa">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="peiliselfie.jpg" class="slide" alt="minä lähdössä töihin">
+        </div>
+        <div class="mySlides fade">
+            <img src="peli1.jpg" class="slide" alt="jefupelissä">
+        </div>
+    </div>
+    <br>
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+    </div>
+
+    <div class="content">
+        <p>Täällä huutelee Aino. Mä oon tamperelaistunut alun perin Salosta kotoisin oleva 25-vuotias nuori aikuinen. 
+            Tällä hetkellä työskentelen teollisuudessa varastohommissa, opiskelen tietojenkäsittelyä Haaga-Heliassa ja 
+            tavoitteellisesti urheilen amerikkalaista jalkapalloa maajoukkueessa ja SM-tasolla. Mun töistä ja urheilusta
+            voit lukea lisää alla olevien linkkien kautta.</p>
+        <p><a href="work.html" class="link-box">Aino töissä</a><br>
+        <a href="sport.html" class="link-box">Aino urheilemassa</a></p>
+    </div>
+    <footer>
+        <ul class="footer">
+            <li>Aino Joro</li>
+            <li>+358401376123</li>
+            <li><a href="mailto: aino.joro@myy.haaga-helia.fi">aino.joro@myy.haaga-helia.fi</a></li>
+        </ul>
+        <ul class="footer">
+            <li>Instagram: <a href="https://www.instagram.com/ainojoro/#" target="_blank">@ainojoro</a></li>
+            <li>Hudl: <a href="https://www.hudl.com/profile/9235411/Aino-Joro" target="_blank"> Aino Joro</a></li>
+            <li>GitHub: <a href="https://github.com/ainojoo">ainojoo</a></li>
+        </ul>
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides,3000);
+        }
+    </script>
+</body>
+
+</html>
