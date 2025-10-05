@@ -6,6 +6,12 @@
   max-width: 1000px;
   margin: auto;
 }
+
+@media screen and (max-width: 800px) {
+  .photo{
+    width: 100%;
+  }
+}
 .nav {
   list-style-type: none;
   margin: 0;
@@ -29,6 +35,7 @@
 
 .content, p{
   max-width: 600px;
+  width: 90%;
   margin: 5% auto;
 }
 
@@ -55,9 +62,8 @@ header h1{
 h2{
   font-size: 1.3em;
 }
-.sport{
+.photo{
   display: block;
-  background-image: url(urheilu.jpg);
   background-color: rgba(0,0,0,0.5);
   padding: 20% 0%;
   color: #f7f0f0;
@@ -65,21 +71,18 @@ h2{
   background-repeat: no-repeat;
   background-blend-mode: darken;
 }
+.sport{
+  background-image: url(urheilu.jpg);
+}
 .work{
-  display: block;
   background-image: url(varasto.jpg);
-  background-color: rgba(0,0,0,0.5);
-  padding: 20% 0%;
-  color: #f7f0f0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
 }
 html body:not(header){
   font-size: 1em;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #14110F;
 }
 
 .slide{
@@ -126,6 +129,7 @@ footer{
   border-top: #EE964B solid 2px;
   padding: 1%;
   max-width: 600px;
+  width:90%;
   justify-content: center;
 }
 .footer{
@@ -133,6 +137,14 @@ footer{
   padding-left: 0;
   block-size: auto;
   align-items: center;
+  margin-bottom: 2%;
+}
+
+footer a:link{
+  color:#14110F;
+}
+footer a:visited{
+  color:#878e76;
 }
 
 ul{
