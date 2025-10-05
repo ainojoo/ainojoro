@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 800px) {
   .photo{
-    width: 100%;
+    background-size: 80% 80%;
   }
 }
 .nav {
